@@ -47,9 +47,9 @@ const CustomerForm = ({ onSubmit, onBack, cartItemCount, initialData = null }) =
     }
     
     if (!formData.telefono.trim()) {
-      newErrors.telefono = 'El teléfono es requerido'
+      newErrors.telefono = 'El celular es requerido'
     } else if (!/^\d{8}$/.test(formData.telefono.replace(/\s/g, ''))) {
-      newErrors.telefono = 'Ingresa un número de teléfono válido (8 dígitos)'
+      newErrors.telefono = 'Ingresa un número de celular válido (8 dígitos)'
     }
     
     if (!formData.direccion.trim()) {
@@ -141,9 +141,9 @@ const CustomerForm = ({ onSubmit, onBack, cartItemCount, initialData = null }) =
             </div>
 
             <div>
-              <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-2">
-                Teléfono *
-              </label>
+                          <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-2">
+              Celular *
+            </label>
               <input
                 type="tel"
                 id="telefono"
@@ -153,7 +153,7 @@ const CustomerForm = ({ onSubmit, onBack, cartItemCount, initialData = null }) =
                 className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent ${
                   errors.telefono ? 'border-red-500' : 'border-gray-300'
                 }`}
-                placeholder="Ej: 79288555"
+                placeholder="Ej: 70012345"
               />
               {errors.telefono && (
                 <p className="text-red-500 text-sm mt-1">{errors.telefono}</p>

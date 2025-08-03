@@ -23,27 +23,27 @@ const CartPage = () => {
 
     const total = getCartTotal()
     
-    const message = `🍰 *PEDIDO - El Rincón de Alcira* 🍰
+    const message = `*PEDIDO - El Rincón de Alcira*
 
-👤 *Cliente:* ${customerInfo.nombre} ${customerInfo.apellido}
-📍 *Dirección:* ${customerInfo.direccion}
-📱 *Teléfono:* ${customerInfo.telefono}
+*Cliente:* ${customerInfo.nombre} ${customerInfo.apellido}
+*Dirección:* ${customerInfo.direccion}
+*Celular:* ${customerInfo.telefono}
 
-🛒 *Productos:*
+*Productos:*
 ${items}
 
-💰 *Total: Bs. ${total}*
+*Total: Bs. ${total}*
 
-📝 *Notas:* ${customerInfo.notas || 'Sin notas adicionales'}
+*Notas:* ${customerInfo.notas || 'Sin notas adicionales'}
 
-¡Gracias por tu pedido! 🎉`
+¡Gracias por tu pedido!`
 
     return encodeURIComponent(message)
   }
 
   const sendWhatsAppOrder = () => {
     const message = generateWhatsAppMessage()
-    const whatsappUrl = `https://wa.me/59179275835?text=${message}`
+    const whatsappUrl = `https://wa.me/59170012345?text=${message}`
     window.open(whatsappUrl, '_blank')
   }
 

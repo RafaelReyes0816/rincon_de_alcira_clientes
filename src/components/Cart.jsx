@@ -72,7 +72,7 @@ const Cart = ({
                 <span className="ml-2 text-gray-800">{customerInfo.nombre} {customerInfo.apellido}</span>
               </div>
               <div>
-                <span className="font-medium text-gray-600">Teléfono:</span>
+                <span className="font-medium text-gray-600">Celular:</span>
                 <span className="ml-2 text-gray-800">{customerInfo.telefono}</span>
               </div>
               <div className="md:col-span-2">
