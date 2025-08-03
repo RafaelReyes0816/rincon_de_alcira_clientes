@@ -17,7 +17,6 @@ const Header = () => {
             <div className="text-3xl">🍰</div>
             <div>
               <h1 className="text-2xl font-bold text-gray-800">El Rincón de Alcira</h1>
-              <p className="text-sm text-gray-600">Repostería Artesanal - Bolivia</p>
             </div>
           </Link>
           

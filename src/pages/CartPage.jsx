@@ -45,6 +45,15 @@ ${items}
     const message = generateWhatsAppMessage()
     const whatsappUrl = `https://wa.me/59179275835?text=${message}`
     window.open(whatsappUrl, '_blank')
+    
+    // Mostrar mensaje de confirmación
+    alert('¡Pedido enviado exitosamente! El carrito se ha vaciado para un nuevo pedido.')
+    
+    // Vaciar el carrito después de enviar el pedido
+    setTimeout(() => {
+      clearCart()
+      navigate('/')
+    }, 500) // Pequeño delay para que el usuario vea el mensaje
   }
 
   const handleBack = () => {
