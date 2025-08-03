@@ -43,7 +43,7 @@ ${items}
 
   const sendWhatsAppOrder = () => {
     const message = generateWhatsAppMessage()
-    const whatsappUrl = `https://wa.me/59170012345?text=${message}`
+    const whatsappUrl = `https://wa.me/59179275835?text=${message}`
     window.open(whatsappUrl, '_blank')
   }
 

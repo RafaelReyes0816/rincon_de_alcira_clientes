@@ -3,12 +3,12 @@ import React from 'react'
 const ContactPage = ({ onBack }) => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent('Hola! Me gustaría hacer un pedido')
-    const whatsappUrl = `https://wa.me/59170012345?text=${message}`
+    const whatsappUrl = `https://wa.me/59179275835?text=${message}`
     window.open(whatsappUrl, '_blank')
   }
 
   const handleCallClick = () => {
-    window.open('tel:+59170012345', '_blank')
+    window.open('tel:+59179275835', '_blank')
   }
 
   return (
@@ -48,7 +48,7 @@ const ContactPage = ({ onBack }) => {
                    <div className="text-2xl">📞</div>
                    <div>
                      <h3 className="font-semibold text-gray-800">Teléfono</h3>
-                     <p className="text-gray-600">+591 700 123 45</p>
+                     <p className="text-gray-600">+591 792 758 35</p>
                     <button
                       onClick={handleCallClick}
                       className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm"
